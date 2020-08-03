@@ -8,5 +8,7 @@
 
 - name: Remove YAML files
   shell: "rm -rf /tmp/test.yml"
+  delegate_to: 40.76.24.124
   register: remove_yml_output
 - debug: var=remove_yml_output
+
