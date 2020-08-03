@@ -1,6 +1,6 @@
 ---
 - name: Gather inputs from config file
-  hosts: all
+  hosts: linux
   #become: true
  # become_method: sudo
      
