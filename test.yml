@@ -1,0 +1,10 @@
+---
+- name: Gather inputs from config file
+  hosts: all
+  become: true
+  become_method: sudo
+   
+  
+  tasks:
+    - include_role: 
+        name: test-role-1

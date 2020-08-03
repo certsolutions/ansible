@@ -1,0 +1,11 @@
+---
+- wait_for_connection:
+    timeout: 10
+  register: ssh_conn
+  ignore_errors: yes
+
+
+- name: Remove YAML files
+  shell: "rm -rf /tmp/test.yml"
+  register: remove_yml_output
+- debug: var=remove_yml_output
