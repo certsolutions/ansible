@@ -6,9 +6,8 @@
 - debug: var=inventory_hostname
 
 
-- name: Remove YAML files
-  shell: "rm -rf /tmp/test.yml"
-  delegate_to: 40.76.24.124
+- name: get hostname
+  shell: hostname
   register: remove_yml_output
 - debug: var=remove_yml_output
 
